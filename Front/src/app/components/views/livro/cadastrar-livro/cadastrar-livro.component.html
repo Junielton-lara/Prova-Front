@@ -1,0 +1,14 @@
+<a routerLink="/livro/listar">Listar Livro</a><br>
+<div id="nome">
+    <label for="nome">Nome:</label><br>
+    <input type="text" name="Nome" [(ngModel)]="nome">
+</div>
+<div id="genero">
+    <label for="genero">Gênero:</label><br>
+    <input type="text" name="genero" [(ngModel)]="genero">
+</div>
+<div id="ano">
+    <label for="ano">Ano:</label><br>
+    <input type="number" name="ano" [(ngModel)]="ano">
+</div><br>
+<button (click)="cadastrar()">Cadastrar</button>
