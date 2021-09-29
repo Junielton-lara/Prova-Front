@@ -3,6 +3,6 @@ export interface Livro {
     nome : string;
     genero: string;
     ano: number;
-    dataadc?: string;
+    dataAdc?: string;
 
 }

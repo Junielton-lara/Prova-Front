@@ -1,5 +1,20 @@
 <a routerLink="/livro/cadastrar">Cadastrar Livro</a>
 <br>
-<ol>
-    <li *ngFor="let livro of livros">{{ livro.nome }}</li>
-</ol>
+<br>
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Gênero</td>
+        <td>Ano</td>
+        <td>Data de adição</td>
+    </tr>
+    <tr *ngFor="let livro of livros">
+        <td>{{ livro.id }}</td>
+        <td>{{ livro.nome }}</td>
+        <td>{{ livro.ano }}</td>
+        <td>{{ livro.genero }}</td>
+        <td>{{ livro.dataAdc }} </td>
+
+    </tr>
+</table>
